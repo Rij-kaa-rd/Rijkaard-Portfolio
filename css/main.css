@@ -183,19 +183,30 @@ body.lang-en span[data-lang="en"], body.lang-en a[data-lang="en"] { display: inl
 .lang-opt { opacity: 0.5; transition: opacity 0.2s; }
 .lang-opt.active { opacity: 1; color: var(--accent); font-weight: 700; }
 
-/* ===== HERO / INTRO (CENTERED & NEAT) ===== */
+/* ===== HERO / INTRO (REDESIGNED 2-COLUMN LAYOUT) ===== */
 .intro {
   padding-top: 140px;
   padding-bottom: 70px;
 }
 
-.intro-card {
-  max-width: 840px;
-  margin: 0 auto;
+.intro-grid {
+  display: grid;
+  grid-template-columns: 320px 1fr;
+  gap: 48px;
+  align-items: start;
+}
+
+/* Left Side: Profile Card & Quick Contacts */
+.intro-left {
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 32px 24px;
   display: flex;
   flex-direction: column;
   align-items: center;
   text-align: center;
+  box-shadow: 0 16px 40px rgba(0,0,0,0.4);
 }
 
 .intro-portrait {
@@ -204,8 +215,12 @@ body.lang-en span[data-lang="en"], body.lang-en a[data-lang="en"] { display: inl
   border-radius: 20px;
   overflow: hidden;
   border: 1px solid var(--border);
-  box-shadow: 0 16px 40px rgba(0,0,0,0.6);
+  box-shadow: 0 12px 30px rgba(0,0,0,0.5);
   margin-bottom: 24px;
+  transition: transform 0.3s var(--ease);
+}
+.intro-portrait:hover {
+  transform: scale(1.03);
 }
 
 .intro-portrait img {
@@ -216,7 +231,7 @@ body.lang-en span[data-lang="en"], body.lang-en a[data-lang="en"] { display: inl
 
 .intro-name {
   font-family: var(--font-heading);
-  font-size: 2.8rem;
+  font-size: 2.2rem;
   font-weight: 800;
   color: #fff;
   line-height: 1.15;
@@ -224,57 +239,64 @@ body.lang-en span[data-lang="en"], body.lang-en a[data-lang="en"] { display: inl
 }
 
 .intro-role {
-  font-size: 1.05rem;
+  font-size: 0.95rem;
   color: var(--accent);
   font-weight: 600;
-  margin-bottom: 20px;
+  margin-bottom: 24px;
 }
 
-.intro-bio {
+/* Quick Contact Details */
+.info-list {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin-bottom: 28px;
+  border-top: 1px solid var(--border);
+  padding-top: 24px;
+}
+
+.info-item {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  font-size: 0.85rem;
   color: var(--text-secondary);
-  font-size: 0.95rem;
-  line-height: 1.75;
-  max-width: 720px;
-  margin: 0 auto 14px auto;
+  text-align: left;
+}
+
+.info-item i {
+  color: var(--accent);
+  width: 16px;
   text-align: center;
 }
 
-.intro-meta {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 24px;
-  font-size: 0.88rem;
-  color: var(--text-dim);
-  margin-top: 20px;
+.info-item a:hover {
+  color: #fff;
+  text-decoration: underline;
 }
 
-.intro-meta-item {
-  display: flex;
-  align-items: center;
-  gap: 8px;
-}
-
-.intro-meta-item i { color: var(--accent); }
-
+/* Actions inside the Left Card */
 .intro-actions {
   display: flex;
-  justify-content: center;
-  gap: 14px;
-  margin-top: 28px;
+  flex-direction: column;
+  width: 100%;
+  gap: 10px;
 }
 
 .btn {
   display: inline-flex;
   align-items: center;
+  justify-content: center;
   gap: 8px;
-  padding: 10px 24px;
+  padding: 10px 20px;
   border-radius: 8px;
-  font-size: 0.88rem;
+  font-size: 0.85rem;
   font-weight: 600;
   cursor: pointer;
   transition: all 0.25s var(--ease);
   border: none;
+  width: 100%;
 }
 
 .btn-fill {
@@ -294,6 +316,65 @@ body.lang-en span[data-lang="en"], body.lang-en a[data-lang="en"] { display: inl
 .btn-outline:hover {
   border-color: var(--border-hover);
   background: rgba(255,255,255,0.04);
+}
+
+/* Right Side: Professional Summary & Education Spotlight */
+.intro-right {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+
+.intro-bio {
+  color: var(--text-secondary);
+  font-size: 0.98rem;
+  line-height: 1.8;
+}
+
+.intro-bio p {
+  margin-bottom: 16px;
+}
+.intro-bio p:last-child {
+  margin-bottom: 0;
+}
+
+.spotlight-card {
+  background: rgba(255, 255, 255, 0.02);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 28px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+}
+
+.spotlight-title {
+  font-family: var(--font-heading);
+  font-size: 1.15rem;
+  font-weight: 700;
+  color: #fff;
+  margin-bottom: 16px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.spotlight-title i {
+  color: var(--accent);
+}
+
+.spotlight-details {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.spotlight-item {
+  font-size: 0.9rem;
+  color: var(--text-secondary);
+  line-height: 1.6;
+}
+
+.spotlight-item strong {
+  color: #fff;
 }
 
 /* ===== PROJECT CARDS ===== */
@@ -729,7 +810,11 @@ body.lang-en span[data-lang="en"], body.lang-en a[data-lang="en"] { display: inl
 
 @media (max-width: 768px) {
   .nav-links { display: none; }
-  .intro-name { font-size: 2.2rem; }
+  .intro-grid {
+    grid-template-columns: 1fr;
+    gap: 32px;
+  }
+  .intro-name { font-size: 2.0rem; }
   .achievements-grid { grid-template-columns: 1fr; }
   .skills-grid { grid-template-columns: 1fr; }
   .tl-item {
