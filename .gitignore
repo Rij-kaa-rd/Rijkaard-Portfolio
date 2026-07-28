@@ -1,0 +1,21 @@
+# Source folders with raw project data, presentation PDFs, and notebooks
+/Awards and Achievement/
+/Bachelor Thesis/
+/Data Analyst Intern BPS/
+/Iden.gg/
+/Integrated field PROJECT/
+/Jr Data Analyst Candidate Eklipse.GG/
+/Lithology Modelling Project Hackathon (Tim Energi Nusantara)/
+/PETROPHYSICS SOFTWARE DEVELOPMENT IN PETROPHYSICS LAB ITS/
+/Studi Kerawanan Bencana Longsor Kabupaten Situbondo/
+
+# Python scripts & raw loose files
+/scripts/
+/*.png
+/*.jpeg
+
+# System & IDE files
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/

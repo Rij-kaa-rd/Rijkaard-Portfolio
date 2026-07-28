@@ -1,0 +1,1067 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio | Rijkaard Elyandrie</title>
+  <meta name="description" content="Personal Portfolio of Rijkaard Elyandrie - Geophysical Engineer, Data Scientist, and Software Developer.">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;600&family=Outfit:wght@500;600;700;800&display=swap" rel="stylesheet">
+  
+  <!-- FontAwesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+  <!-- Main Stylesheet -->
+  <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+
+  <!-- Minimal Navbar -->
+  <nav class="navbar">
+    <div class="container">
+      <a href="#intro" class="nav-name">
+        RIJKAARD ELYANDRIE 
+        <span style="font-size:0.75rem; color:var(--accent); font-weight:400; margin-left:8px;">// PORTFOLIO</span>
+      </a>
+
+      <div class="nav-right">
+        <ul class="nav-links">
+          <li>
+            <a href="#intro" class="active">
+              <span data-lang="id">Biografi</span>
+              <span data-lang="en">Biography</span>
+            </a>
+          </li>
+          <li>
+            <a href="#projects">
+              <span data-lang="id">Project</span>
+              <span data-lang="en">Projects</span>
+            </a>
+          </li>
+          <li>
+            <a href="#achievements">
+              <span data-lang="id">Prestasi</span>
+              <span data-lang="en">Achievements</span>
+            </a>
+          </li>
+          <li>
+            <a href="#experience">
+              <span data-lang="id">Pengalaman</span>
+              <span data-lang="en">Experience</span>
+            </a>
+          </li>
+          <li>
+            <a href="#skills">
+              <span data-lang="id">Keahlian</span>
+              <span data-lang="en">Skills</span>
+            </a>
+          </li>
+        </ul>
+
+        <!-- Language Switcher Toggle Button -->
+        <button id="langToggleBtn" class="lang-toggle-btn" title="Switch Language / Ganti Bahasa">
+          <i class="fa-solid fa-globe"></i>
+          <span id="langOptId" class="lang-opt active">ID</span>
+          <span style="opacity:0.3;">|</span>
+          <span id="langOptEn" class="lang-opt">EN</span>
+        </button>
+
+        <a href="Updated CV_Rijkaard Elyandrie_2026.pdf" target="_blank" class="nav-cv">
+          <i class="fa-solid fa-file-pdf"></i> CV PDF
+        </a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Section 1: Intro & Biography (Centered & Neat Hero) -->
+  <section id="intro" class="intro">
+    <div class="container">
+      <div class="intro-card">
+        <div class="intro-portrait">
+          <img src="assets/images/profile_portrait.webp" alt="Rijkaard Elyandrie">
+        </div>
+
+        <div class="section-label">
+          <span data-lang="id">PORTFOLIO PRIBADI</span>
+          <span data-lang="en">PERSONAL PORTFOLIO</span>
+        </div>
+        
+        <h1 class="intro-name">Rijkaard Elyandrie</h1>
+        <div class="intro-role">Geophysical Engineer • Data Scientist • Software Developer</div>
+
+        <!-- Indonesian Bio -->
+        <div data-lang="id">
+          <p class="intro-bio">
+            Lulusan <strong>Teknik Geofisika Institut Teknologi Sepuluh Nopember (ITS)</strong> (IPK 3.41). Memiliki fokus keahlian pada pengolahan data geofisika, optimasi algoritma <em>Machine Learning</em> (XGBoost, CRBM, PSO), pengembangan perangkat lunak/aplikasi web, dan analisis data spasial (WebGIS).
+          </p>
+          <p class="intro-bio">
+            Berpengalaman memimpin tim meraih <strong>Juara 1 SEG Challenge Bowl Asia-Pacific 2022</strong> dan <strong>Juara 1 SPE Protect 2024</strong>, serta mengembangkan berbagai sistem perangkat lunak dari visualisasi petrofisika hingga platform analitik data.
+          </p>
+        </div>
+
+        <!-- English Bio -->
+        <div data-lang="en">
+          <p class="intro-bio">
+            Bachelor of <strong>Geophysical Engineering graduate from Institut Teknologi Sepuluh Nopember (ITS)</strong> (GPA 3.41). Specialized in geophysical data processing, <em>Machine Learning</em> optimization (XGBoost, CRBM, PSO), web application & software development, and spatial data analytics (WebGIS).
+          </p>
+          <p class="intro-bio">
+            Experienced in leading teams to win <strong>1st Place Winner in SEG Challenge Bowl Asia-Pacific 2022</strong> and <strong>1st Place Winner in SPE Protect 2024</strong>, as well as developing software systems ranging from petrophysics log visualization to data analytics platforms.
+          </p>
+        </div>
+
+        <div class="intro-meta">
+          <div class="intro-meta-item">
+            <i class="fa-solid fa-graduation-cap"></i> 
+            <span data-lang="id">S1 Teknik Geofisika ITS (IPK 3.41)</span>
+            <span data-lang="en">B.S. Geophysical Eng. ITS (GPA 3.41)</span>
+          </div>
+          <div class="intro-meta-item">
+            <i class="fa-solid fa-location-dot"></i> Surabaya, Indonesia
+          </div>
+          <div class="intro-meta-item">
+            <i class="fa-solid fa-envelope"></i> rijkaardelyandrie@gmail.com
+          </div>
+        </div>
+
+        <div class="intro-actions">
+          <a href="#projects" class="btn btn-fill">
+            <i class="fa-solid fa-folder-open"></i> 
+            <span data-lang="id">Lihat Project Portfolio</span>
+            <span data-lang="en">View Portfolio Projects</span>
+          </a>
+          <a href="Updated CV_Rijkaard Elyandrie_2026.pdf" target="_blank" class="btn btn-outline">
+            <i class="fa-solid fa-download"></i> 
+            <span data-lang="id">Unduh CV (PDF)</span>
+            <span data-lang="en">Download CV (PDF)</span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <hr class="divider">
+
+  <!-- Section 2: Projects List with Deep Data Carousels -->
+  <section id="projects" class="section">
+    <div class="container">
+      <div class="section-label">
+        <span data-lang="id">// PORTFOLIO PROJECTS</span>
+        <span data-lang="en">// PORTFOLIO PROJECTS</span>
+      </div>
+      <h2 class="section-title">
+        <span data-lang="id">Daftar Project & Karya</span>
+        <span data-lang="en">Featured Projects & Works</span>
+      </h2>
+      <p class="section-desc">
+        <span data-lang="id">Kumpulan project dalam bidang Machine Learning, Aplikasi Web & Software, WebGIS, Petrofisika, dan Analisis Data.</span>
+        <span data-lang="en">A collection of projects spanning Machine Learning, Web Apps & Software, WebGIS, Petrophysics, and Data Analytics.</span>
+      </p>
+
+      <!-- Category Filter -->
+      <div class="filter-bar">
+        <button class="filter-btn active" data-filter="all">
+          <span data-lang="id">Semua Project</span>
+          <span data-lang="en">All Projects</span>
+        </button>
+        <button class="filter-btn" data-filter="ml">Machine Learning & AI</button>
+        <button class="filter-btn" data-filter="software">Web & Software</button>
+        <button class="filter-btn" data-filter="gis">Geoscience & GIS</button>
+        <button class="filter-btn" data-filter="analytics">Data Analytics</button>
+      </div>
+
+      <!-- Projects List -->
+      <div class="projects-list">
+
+        <!-- Project 1: Petrophysics Software (Deep Quantitative Features) -->
+        <article class="project-entry" data-category="software gis">
+          <div class="carousel-wrapper">
+            <div class="carousel-track">
+              <div class="carousel-slide">
+                <img src="assets/images/projects/petrophysics/quant_multitrack_viewer.webp" alt="Multi-Track Well Log Viewer">
+                <div class="slide-caption">Multi-Track Log Viewer (GR, Resistivity, Density, Porosity, Zonation)</div>
+              </div>
+              <div class="carousel-slide">
+                <img src="assets/images/projects/petrophysics/quant_calculators.webp" alt="Quantitative Petrophysics Calculators">
+                <div class="slide-caption">Quantitative Module (Vshale, Porosity, Sw Archie/Indonesian, Permeability)</div>
+              </div>
+              <div class="carousel-slide">
+                <img src="assets/images/projects/petrophysics/quant_pickett_salinity.webp" alt="Pickett Plot & Rw Salinity">
+                <div class="slide-caption">Pickett Plot Log-Log Graph & Rw / Water Salinity Calculator</div>
+              </div>
+              <div class="carousel-slide">
+                <img src="assets/images/projects/petrophysics/petro_0.webp" alt="IPA Convex 2025 Booth">
+                <div class="slide-caption">IPA Convex 2025 Youth Project Booth Exhibition</div>
+              </div>
+              <div class="carousel-slide">
+                <img src="assets/images/projects/petrophysics/petro_3.webp" alt="Presenting to Audience">
+                <div class="slide-caption">Live Software Demonstration to Industry Professionals</div>
+              </div>
+              <div class="carousel-slide">
+                <img src="assets/images/projects/petrophysics/quant_poster_full.webp" alt="PetroniX Software Full Poster">
+                <div class="slide-caption">PetroniX Full Technical Architecture Diagram</div>
+              </div>
+            </div>
+            <button class="carousel-btn carousel-prev"><i class="fa-solid fa-chevron-left"></i></button>
+            <button class="carousel-btn carousel-next"><i class="fa-solid fa-chevron-right"></i></button>
+            <div class="carousel-dots"></div>
+          </div>
+
+          <div class="project-info">
+            <div class="project-cat">
+              <span data-lang="id">Software Development • Petrofisika</span>
+              <span data-lang="en">Software Development • Petrophysics</span>
+            </div>
+            <h3 class="project-title">Petrophysics GUI Software — PetroniX (IPA Convex 2025)</h3>
+            
+            <p class="project-desc" data-lang="id">
+              Pengembangan perangkat lunak interpretasi petrofisika skala akademis berbasis Python (PetroniX) yang dipamerkan di <strong>Youth Project Booth IPA Convex 2025</strong>. Dirancang untuk menjawab kebutuhan perangkat lunak interpretasi log sumur modern dan dapat diakses oleh profesional maupun mahasiswa.
+            </p>
+            <p class="project-desc" data-lang="en">
+              Academic-scale petrophysics interpretation GUI software developed in Python (PetroniX), exhibited at the <strong>Youth Project Booth at IPA Convex 2025</strong>. Designed to provide an accessible and modern well log interpretation solution for both industry professionals and students.
+            </p>
+
+            <ul class="project-highlights" data-lang="id">
+              <li><strong>Qualitative Module:</strong> Multi-Track Log Viewer untuk visualisasi Gamma Ray, Resistivitas, Densitas, Porositas, serta Smart Zonation & Shading reservoir.</li>
+              <li><strong>Quantitative Equations:</strong> Kalkulator Volume Shale (Normalized, Clavier, Stieber, Larionov), Porositas Total & Efektif, Saturasi Air (Archie, Indonesian, Simandoux, Dual Water), & Permeabilitas (Persamaan Timur).</li>
+              <li><strong>Pickett Plot & Rw Calculator:</strong> Grafik log-log Pickett Plot untuk estimasi visual Sw dan parameter Archie (a, m, n), serta kalkulator salinitas air formasi.</li>
+            </ul>
+
+            <ul class="project-highlights" data-lang="en">
+              <li><strong>Qualitative Module:</strong> Multi-Track Log Viewer for displaying Gamma Ray, Resistivity, Density, Porosity, alongside Smart Reservoir Zonation & Shading.</li>
+              <li><strong>Quantitative Equations:</strong> Calculators for Shale Volume (Normalized, Clavier, Stieber, Larionov), Total & Effective Porosity, Water Saturation (Archie, Indonesian, Simandoux, Dual Water), and Permeability (Timur Equation).</li>
+              <li><strong>Pickett Plot & Rw Calculator:</strong> Log-log Pickett Plot graph for visual Sw estimation and Archie parameters (a, m, n), plus formation water salinity (Rw) calculator.</li>
+            </ul>
+
+            <div class="project-tech">
+              <span class="tech-tag">Python</span>
+              <span class="tech-tag">PyQt / GUI</span>
+              <span class="tech-tag">LAS Data Handling</span>
+              <span class="tech-tag">Quantitative Petrophysics</span>
+              <span class="tech-tag">Pickett Plot</span>
+            </div>
+          </div>
+        </article>
+
+        <!-- Project 2: Bachelor Thesis Research (REMOVED UNWANTED MODEL TABLE SLIDE) -->
+        <article class="project-entry" data-category="ml gis">
+          <div class="carousel-wrapper">
+            <div class="carousel-track">
+              <div class="carousel-slide" style="background-color:#ffffff;">
+                <img src="assets/images/projects/thesis/thesis_raw_flowchart.webp" alt="CRBM-PSO-XGBoost Research Flowchart (White BG)" style="background-color:#ffffff;">
+                <div class="slide-caption">Diagram Alur Penelitian Methodologi (CRBM + PSO + XGBoost)</div>
+              </div>
+              <div class="carousel-slide" style="background-color:#ffffff;">
+                <img src="assets/images/projects/thesis/thesis_raw_xgb_pso_table.webp" alt="XGBoost Hyperparameter Table Before & After PSO">
+                <div class="slide-caption">Tabel Parameter Hyperparameter XGBoost Sebelum & Sesudah Optimasi PSO</div>
+              </div>
+              <div class="carousel-slide" style="background-color:#ffffff;">
+                <img src="assets/images/projects/thesis/thesis_raw_pso_params.webp" alt="PSO Algorithm Initialization Parameters">
+                <div class="slide-caption">Tabel Inisialisasi Parameter Algoritma Particle Swarm Optimization (PSO)</div>
+              </div>
+              <div class="carousel-slide">
+                <img src="assets/images/projects/thesis/thesis_raw_correlation.webp" alt="Spearman Correlation Heatmap">
+                <div class="slide-caption">Visualisasi Korelasi Spearman Antar Fitur Log Sumur</div>
+              </div>
+              <div class="carousel-slide">
+                <img src="assets/images/projects/thesis/thesis_raw_evaluation.webp" alt="Evaluation Metrics Bar Charts">
+                <div class="slide-caption">Metrik Evaluasi Performa Model (Accuracy, Precision, Recall, F1-Score)</div>
+              </div>
+            </div>
+            <button class="carousel-btn carousel-prev"><i class="fa-solid fa-chevron-left"></i></button>
+            <button class="carousel-btn carousel-next"><i class="fa-solid fa-chevron-right"></i></button>
+            <div class="carousel-dots"></div>
+          </div>
+
+          <div class="project-info">
+            <div class="project-cat">
+              <span data-lang="id">Riset Tugas Akhir S1 • Machine Learning & Geofisika</span>
+              <span data-lang="en">Bachelor Thesis Research • Machine Learning & Geophysics</span>
+            </div>
+            <h3 class="project-title">Performance Enhancement of XGBoost using CRBM & PSO for Lithology Prediction</h3>
+
+            <p class="project-desc" data-lang="id">
+              Penelitian Tugas Akhir S1 Teknik Geofisika ITS (IPK 3.41). Mengembangkan metode hibrida Machine Learning gabungan <strong>Continuous Restricted Boltzmann Machine (CRBM)</strong> untuk representasi fitur dan <strong>Particle Swarm Optimization (PSO)</strong> untuk optimasi hyperparameter XGBoost pada Lapangan Poseidon, Cekungan Browse, Australia.
+            </p>
+            <p class="project-desc" data-lang="en">
+              Undergraduate thesis research at ITS Geophysical Engineering (GPA 3.41). Developed a hybrid Machine Learning pipeline integrating <strong>Continuous Restricted Boltzmann Machine (CRBM)</strong> feature learning and <strong>Particle Swarm Optimization (PSO)</strong> hyperparameter tuning to enhance XGBoost lithology prediction in Poseidon Field, Browse Basin, Australia.
+            </p>
+
+            <ul class="project-highlights" data-lang="id">
+              <li><strong>Optimasi Hibrida:</strong> Penggunaan CRBM untuk mengekstrak fitur non-linear kompleks dari well log & PSO untuk mencari hyperparameter optimal XGBoost.</li>
+              <li><strong>Validasi Uji Buta:</strong> Pengujian performa prediksi litologi (Sandstone, Siltstone, Mudstone, Shale) pada sumur uji buta tanpa kebocoran data.</li>
+              <li><strong>Hasil Penelitian:</strong> Menghasilkan prediksi litologi yang sangat akurat serta evaluasi matriks konfusi dan profil perbandingan log prediksi vs aktual.</li>
+            </ul>
+
+            <ul class="project-highlights" data-lang="en">
+              <li><strong>Hybrid Pipeline:</strong> Utilizing CRBM to extract complex non-linear feature representations from well logs and PSO to find optimal XGBoost hyperparameters.</li>
+              <li><strong>Blind Well Testing:</strong> Validating lithology classification performance (Sandstone, Siltstone, Mudstone, Shale) on blind test wells without data leakage.</li>
+              <li><strong>Research Outcomes:</strong> Achieved high-fidelity lithology predictions with confusion matrix analysis and predicted vs actual well log cross-sections.</li>
+            </ul>
+
+            <div class="project-tech">
+              <span class="tech-tag">Python</span>
+              <span class="tech-tag">XGBoost</span>
+              <span class="tech-tag">CRBM (Neural Net)</span>
+              <span class="tech-tag">PSO (Particle Swarm)</span>
+              <span class="tech-tag">Well Log Analysis</span>
+              <span class="tech-tag">Bachelor Thesis</span>
+            </div>
+          </div>
+        </article>
+
+        <!-- Project 3: Lithology Hackathon (SEPARATED) -->
+        <article class="project-entry" data-category="ml gis">
+          <div class="carousel-wrapper">
+            <div class="carousel-track">
+              <div class="carousel-slide">
+                <img src="assets/images/projects/hackathon/hackathon_nb_0.webp" alt="Non-Normalized Confusion Matrix of 12 Lithology Classes">
+                <div class="slide-caption">Non-Normalized Confusion Matrix — XGBoost Classification across 12 Lithology Classes (Sandstone, Shale, Limestone, Halite, etc.)</div>
+              </div>
+              <div class="carousel-slide">
+                <img src="assets/images/projects/hackathon/hackathon_lith_distribution.webp" alt="Lithology Distribution Bar Chart">
+                <div class="slide-caption">Distribusi Litologi Seluruh Data (Prediksi) — Shale Dominan (~10K), diikuti Halite (~6.5K) dan Sandstone (~4.4K)</div>
+              </div>
+              <div class="carousel-slide">
+                <img src="assets/images/projects/hackathon/hackathon_lith_dist_train.webp" alt="Training Data Lithology Distribution">
+                <div class="slide-caption">Distribusi Litologi Data Training (Cluster 2) — Shale (~10.9K), Sandstone (~4.4K), Limestone (~3.8K), Marl (~2.3K)</div>
+              </div>
+              <div class="carousel-slide">
+                <img src="assets/images/projects/hackathon/hackathon_welllog_litho_well1.webp" alt="Well Log with Lithology Track for Well 16_2-6">
+                <div class="slide-caption">Multi-Track Well Log Sumur 16_2-6 — GR, CALI, RHOB/NPHI, RDEP, DTC, RMED, DRHO dengan Track Litologi (Ground Truth)</div>
+              </div>
+              <div class="carousel-slide">
+                <img src="assets/images/projects/hackathon/hackathon_nb_4.webp" alt="Well Log Curves for Well 16_2-6 (Test Data)">
+                <div class="slide-caption">Well Log Kurva Sumur 16_2-6 (Data Test tanpa Label) — 7 Track: GR, CALI, RHOB/NPHI, RDEP, DTC, RMED, DRHO</div>
+              </div>
+              <div class="carousel-slide">
+                <img src="assets/images/projects/hackathon/hackathon_nb_5.webp" alt="Well Log Curves for Well 17_4-1 (Test Data)">
+                <div class="slide-caption">Well Log Kurva Sumur 17_4-1 (Data Test) — Zona Sandstone dominan di bagian atas, transisi ke Halite di kedalaman bawah</div>
+              </div>
+              <div class="carousel-slide">
+                <img src="assets/images/projects/hackathon/hackathon_pred_vs_actual_well1.webp" alt="Actual vs Predicted Lithology Comparison for Well 16-2-6">
+                <div class="slide-caption">Perbandingan Litologi Aktual vs Prediksi Sumur 16-2-6 — Validasi Visual XGBoost (Shale, Sandstone, Limestone)</div>
+              </div>
+              <div class="carousel-slide">
+                <img src="assets/images/projects/hackathon/hackathon_pred_vs_actual_well2.webp" alt="Actual vs Predicted Lithology Comparison for Well 17-4-1">
+                <div class="slide-caption">Perbandingan Litologi Aktual vs Prediksi Sumur 17-4-1 — Prediksi zona Halite &amp; Anhydrite di kedalaman bawah</div>
+              </div>
+              <div class="carousel-slide">
+                <img src="assets/images/projects/hackathon/hackathon_pred_vs_actual_well3.webp" alt="Actual vs Predicted Lithology Comparison for Well 25-10-10">
+                <div class="slide-caption">Perbandingan Litologi Aktual vs Prediksi Sumur 25-10-10 — Prediksi pada sumur terdalam (2100–3800m) dengan litologi kompleks</div>
+              </div>
+              <div class="carousel-slide">
+                <img src="assets/images/projects/hackathon/hackathon_nb_15.webp" alt="Full Lithology Prediction Result for Well 25-10-10">
+                <div class="slide-caption">Hasil Akhir Prediksi Sumur 25-10-10 — Track Litologi Aktual (kiri) vs Litologi Prediksi XGBoost (kanan)</div>
+              </div>
+            </div>
+            <button class="carousel-btn carousel-prev"><i class="fa-solid fa-chevron-left"></i></button>
+            <button class="carousel-btn carousel-next"><i class="fa-solid fa-chevron-right"></i></button>
+            <div class="carousel-dots"></div>
+          </div>
+
+          <div class="project-info">
+            <div class="project-cat">
+              <span data-lang="id">Hackathon Project • Machine Learning &amp; Geoscience</span>
+              <span data-lang="en">Hackathon Project • Machine Learning &amp; Geoscience</span>
+            </div>
+            <h3 class="project-title">Lithology Auto-Labeling System (Scale Up Geoenergy Hackathon 2025)</h3>
+
+            <p class="project-desc" data-lang="id">
+              Pengembangan pipeline klasifikasi litologi otomatis oleh Tim Energi Nusantara pada <strong>Scale Up Geoenergy Hackathon 2025</strong>. Menggunakan model <strong>XGBoost Classifier</strong> dengan hyperparameter tuning berbasis <strong>Optuna</strong> untuk mengklasifikasi 12 jenis litologi (Sandstone, Shale, Limestone, Marl, Dolomite, Chalk, Halite, Anhydrite, Tuff, Coal, Basement, Sandstone/Shale) dari 10 fitur well log (GR, RHOB, NPHI, DTC, DRHO, CALI, RDEP, RMED, ROP, RSHA). Data diproses melalui KNN Imputation, MinMax Scaling, Label Encoding, dan spatial clustering berbasis kedekatan sumur.
+            </p>
+            <p class="project-desc" data-lang="en">
+              Automated lithology classification pipeline developed by Tim Energi Nusantara at the <strong>Scale Up Geoenergy Hackathon 2025</strong>. Utilized an <strong>XGBoost Classifier</strong> with <strong>Optuna</strong>-based hyperparameter optimization to classify 12 lithology types (Sandstone, Shale, Limestone, Marl, Dolomite, Chalk, Halite, Anhydrite, Tuff, Coal, Basement, Sandstone/Shale) from 10 well log features (GR, RHOB, NPHI, DTC, DRHO, CALI, RDEP, RMED, ROP, RSHA). Data was preprocessed through KNN Imputation, MinMax Scaling, Label Encoding, and spatial well-proximity clustering.
+            </p>
+
+            <ul class="project-highlights" data-lang="id">
+              <li><strong>Akurasi Validasi 96%:</strong> Model XGBoost mencapai akurasi 96.04% pada data validasi (80/20 split) untuk 12 kelas litologi.</li>
+              <li><strong>Skor F1 60%:</strong> Berhasil melakukan pelabelan litologi otomatis pada sumur blind test (16-2-6, 17-4-1, 25-10-10) dengan skor F1 60%.</li>
+              <li><strong>Pengolahan Data:</strong> Pipeline preprocessing lengkap: pembacaan LAS multi-sumur, KNN Imputation untuk missing values, MinMax Scaling, dan Label Encoding.</li>
+              <li><strong>Pemodelan Terklaster:</strong> Penerapan spatial clustering berbasis kedekatan antar sumur untuk mengurangi heterogenitas geologi dan meningkatkan akurasi prediksi per cluster.</li>
+              <li><strong>Optuna Hyperparameter Tuning:</strong> Optimasi otomatis parameter XGBoost (n_estimators, max_depth, learning_rate, subsample, colsample_bytree, gamma, reg_alpha, reg_lambda).</li>
+            </ul>
+
+            <ul class="project-highlights" data-lang="en">
+              <li><strong>96% Validation Accuracy:</strong> XGBoost model achieved 96.04% accuracy on validation data (80/20 split) across 12 lithology classes.</li>
+              <li><strong>60% F1-Score:</strong> Successfully performed automated lithology labeling on blind test wells (16-2-6, 17-4-1, 25-10-10) achieving a 60% F1 score.</li>
+              <li><strong>Data Pipeline:</strong> Full preprocessing pipeline: multi-well LAS reading, KNN Imputation for missing values, MinMax Scaling, and Label Encoding.</li>
+              <li><strong>Spatial Clustering:</strong> Applied spatially clustered modeling based on well proximity to minimize geological heterogeneity and improve per-cluster prediction accuracy.</li>
+              <li><strong>Optuna Hyperparameter Tuning:</strong> Automated optimization of XGBoost parameters (n_estimators, max_depth, learning_rate, subsample, colsample_bytree, gamma, reg_alpha, reg_lambda).</li>
+            </ul>
+
+            <div class="project-tech">
+              <span class="tech-tag">Python</span>
+              <span class="tech-tag">XGBoost</span>
+              <span class="tech-tag">Optuna</span>
+              <span class="tech-tag">scikit-learn</span>
+              <span class="tech-tag">LAS / lasio</span>
+              <span class="tech-tag">KNN Imputation</span>
+              <span class="tech-tag">Spatial Clustering</span>
+              <span class="tech-tag">Jupyter Notebook</span>
+            </div>
+          </div>
+        </article>
+
+        <!-- Project 4: Eklipse.gg Assessment (Full Presentation Deck) -->
+        <article class="project-entry" data-category="analytics">
+          <div class="carousel-wrapper">
+            <div class="carousel-track">
+              <div class="carousel-slide">
+                <img src="assets/images/projects/eklipse/eklipse_slide_2.webp" alt="Slide 2: Game Overview">
+                <div class="slide-caption">Document Page 2: Game Understanding — Mobile Legends: Bang Bang</div>
+              </div>
+              <div class="carousel-slide">
+                <img src="assets/images/projects/eklipse/eklipse_slide_4.webp" alt="Slide 4: Data Dictionary">
+                <div class="slide-caption">Document Page 4: Data Dictionary & Session Mapping</div>
+              </div>
+              <div class="carousel-slide">
+                <img src="assets/images/projects/eklipse/eklipse_slide_16.webp" alt="Slide 16: Top Games Analytics">
+                <div class="slide-caption">Document Page 16: SQL Q1 — Top 10 Games by Clip Count</div>
+              </div>
+              <div class="carousel-slide">
+                <img src="assets/images/projects/eklipse/eklipse_slide_17.webp" alt="Slide 17: User Conversion">
+                <div class="slide-caption">Document Page 17: SQL Q2 — User Conversion Before vs After Premium</div>
+              </div>
+              <div class="carousel-slide">
+                <img src="assets/images/projects/eklipse/eklipse_slide_18.webp" alt="Slide 18: Engagement Heatmap">
+                <div class="slide-caption">Document Page 18: SQL Q3 — Activity Heatmap (Hour of Day vs Day of Week)</div>
+              </div>
+              <div class="carousel-slide">
+                <img src="assets/images/projects/eklipse/eklipse_slide_19.webp" alt="Slide 19: Content Analytics">
+                <div class="slide-caption">Document Page 19: Content Creation & Feature Usage Breakdown</div>
+              </div>
+              <div class="carousel-slide">
+                <img src="assets/images/projects/eklipse/eklipse_slide_20.webp" alt="Slide 20: Strategic Recommendations">
+                <div class="slide-caption">Document Page 20: Product Recommendations & Growth Strategy</div>
+              </div>
+            </div>
+            <button class="carousel-btn carousel-prev"><i class="fa-solid fa-chevron-left"></i></button>
+            <button class="carousel-btn carousel-next"><i class="fa-solid fa-chevron-right"></i></button>
+            <div class="carousel-dots"></div>
+          </div>
+
+          <div class="project-info">
+            <div class="project-cat">
+              <span data-lang="id">Data Analytics • SQL & Report Document</span>
+              <span data-lang="en">Data Analytics • SQL & Report Document</span>
+            </div>
+            <h3 class="project-title">Eklipse.gg Analytics & Product Assessment (Technical Document)</h3>
+
+            <p class="project-desc" data-lang="id">
+              Analisis data komprehensif 20 halaman dokumen teknis untuk tes asesmen kandidat Data Analyst Eklipse.gg. Mengintegrasikan pemahaman game MOBA (MLBB), pembersihan data, query SQL multi-tabel, dan formulasi rekomendasi strategi produk. Hasil asesmen menghasilkan penawaran kerja (Job Offer).
+            </p>
+            <p class="project-desc" data-lang="en">
+              A comprehensive 20-page analytics document produced for the Junior Data Analyst recruitment assessment at Eklipse.gg. Integrates MOBA gameplay understanding (MLBB), data cleaning, multi-table SQL queries, and product growth strategies, resulting in a formal job offer.
+            </p>
+
+            <ul class="project-highlights" data-lang="id">
+              <li><strong>Task 1 (Game Understanding):</strong> Pemetaan mekanik game MLBB, peranan hero, battle spells, map objective, dan potensi ekstraksi data klip gameplay.</li>
+              <li><strong>Task 2 (Data Dictionary & Pipeline):</strong> Pemetaan struktur tabel `gamesession`, `clips`, `users`, validasi timestamp, dan konversi durasi.</li>
+              <li><strong>Task 3 (SQL Analytics & Viz):</strong> Eksekusi query analitis untuk evaluasi volume klip per game, tren perilaku pengguna sebelum/sesudah akun premium, dan heatmap aktivitas pengguna (Hour vs Day).</li>
+              <li><strong>Task 4 (Strategic Growth):</strong> Solusi berbasis data untuk meningkatkan retensi pengguna dan konversi berlangganan premium.</li>
+            </ul>
+
+            <ul class="project-highlights" data-lang="en">
+              <li><strong>Task 1 (Game Understanding):</strong> Mapping MLBB mechanics, hero roles, battle spells, map objectives, and gameplay clip data extraction opportunities.</li>
+              <li><strong>Task 2 (Data Dictionary & Pipeline):</strong> Table structure mapping for `gamesession`, `clips`, `users`, timestamp validation, and duration formatting.</li>
+              <li><strong>Task 3 (SQL Analytics & Viz):</strong> Executing analytical queries to evaluate clip volume per game, user conversion trends before/after premium subscription, and hourly user activity heatmaps.</li>
+              <li><strong>Task 4 (Strategic Growth):</strong> Data-backed strategies to improve user retention and premium conversion rates.</li>
+            </ul>
+
+            <div class="project-tech">
+              <span class="tech-tag">SQL (SQLite)</span>
+              <span class="tech-tag">Python Pandas</span>
+              <span class="tech-tag">Data Visualization</span>
+              <span class="tech-tag">Product Analytics</span>
+              <span class="tech-tag">Technical Evaluation Document</span>
+            </div>
+          </div>
+        </article>
+
+        <!-- Project 5: Bromo Tengger Semeru (Integrated Field Geophysics Report & Data) -->
+        <article class="project-entry" data-category="gis">
+          <div class="carousel-wrapper">
+            <div class="carousel-track">
+              <div class="carousel-slide">
+                <img src="assets/images/projects/bts/bts_microtremor_acquisiton_design.webp" alt="Mikrotremor Acquisition and Actual Station Locations">
+                <div class="slide-caption">Mikrotremor: Desain Akuisisi Awal &amp; Plot Titik Pengukuran Aktual (Titik 7.1 - 7.4) di Lautan Pasir / Kaldera Bromo</div>
+              </div>
+              <div class="carousel-slide">
+                <img src="assets/images/projects/bts/bts_microtremor_flowchart.webp" alt="Microtremor Acquisition and Processing Flowchart">
+                <div class="slide-caption">Mikrotremor: Flowchart Akuisisi Lapangan &amp; Tahapan Pengolahan Data HVSR (Windowing, FFT, Inversi, Vs30, Ketebalan Sedimen)</div>
+              </div>
+              <div class="carousel-slide">
+                <img src="assets/images/projects/bts/bts_microtremor_qc_standards.webp" alt="SESAME 2004 H/V Quality Control Standards">
+                <div class="slide-caption">Mikrotremor: Acuan Quality Control Standard SESAME (2004) — Kriteria Keandalan Kurva H/V &amp; Kejernihan Puncak Frekuensi (Clear Peak)</div>
+              </div>
+              <div class="carousel-slide">
+                <img src="assets/images/projects/bts/bts_microtremor_qc_sample.webp" alt="Microtremor H/V Quality Control Result for Station 7.1">
+                <div class="slide-caption">Mikrotremor: Hasil Evaluation Quality Control Titik 7.1 — Kurva HVSR (f0 = 1.732 Hz, A0 = 4.047) Terkonfirmasi Reliable &amp; Clearpeak</div>
+              </div>
+              <div class="carousel-slide">
+                <img src="assets/images/projects/bts/bts_microtremor_amplification.webp" alt="Fundamental Frequency f0 and Amplification Factor A0 Summary">
+                <div class="slide-caption">Mikrotremor: Frekuensi Dominan f0 (1.73–2.44 Hz) &amp; Faktor Amplifikasi A0 (3.11–4.28, Kategori Amplifikasi Sedang)</div>
+              </div>
+              <div class="carousel-slide">
+                <img src="assets/images/projects/bts/bts_microtremor_ground_profiles.webp" alt="Microtremor HVSR Ground Profiles Inversion Result">
+                <div class="slide-caption">Mikrotremor: Hasil Ground Profiles &amp; Parameter Inversi — Model Vp (450.85–759.15 m/s), Vs (216.58–364.68 m/s), Poisson 0.35</div>
+              </div>
+              <div class="carousel-slide">
+                <img src="assets/images/projects/bts/bts_microtremor_inversion_table.webp" alt="Microtremor Vs30 and Sediment Thickness Inversion Table">
+                <div class="slide-caption">Mikrotremor: Tabel Hasil Inversi — Nilai Vs30 (353.6–358.6 m/s) &amp; Estimasi Ketebalan Sedimen Piroklastik (36.16–51.61 m)</div>
+              </div>
+              <div class="carousel-slide">
+                <img src="assets/images/projects/bts/bts_microtremor_documentation.webp" alt="Microtremor Field Survey Documentation Photos">
+                <div class="slide-caption">Mikrotremor: Dokumentasi Lapangan — Setup Sensor Mikrotremor, Penutup Wind Protection, &amp; GPS RTK di Kaldera Bromo</div>
+              </div>
+              <div class="carousel-slide">
+                <img src="assets/images/projects/bts/bts_slide_25.webp" alt="Geoelectrics Profile">
+                <div class="slide-caption">Geolistrik 2D: Penampang Inversi Resistivitas 2D Jalur Fluida Panas Bumi &amp; Sesar Ngadas</div>
+              </div>
+              <div class="carousel-slide">
+                <img src="assets/images/projects/bts/bts_slide_78.webp" alt="Magnetotelluric Profile">
+                <div class="slide-caption">Magnetotellurik (MT): Penampang Inversi 2D MT Delineasi Cap Rock Reservoir Geotermal</div>
+              </div>
+              <div class="carousel-slide">
+                <img src="assets/images/projects/bts/bts_slide_105.webp" alt="Gravity & Magnetic Modeling">
+                <div class="slide-caption">Potensial: Pemodelan 2D/3D Densitas Gravitasi &amp; Susseptibilitas Magnetik Bawah Permukaan</div>
+              </div>
+              <div class="carousel-slide">
+                <img src="assets/images/projects/bts/bts_slide_130.webp" alt="Conceptual Geothermal Model">
+                <div class="slide-caption">Integrasi Subsurface &amp; Model Konseptual Sistem Geotermal Kompleks Bromo Tengger Semeru</div>
+              </div>
+            </div>
+            <button class="carousel-btn carousel-prev"><i class="fa-solid fa-chevron-left"></i></button>
+            <button class="carousel-btn carousel-next"><i class="fa-solid fa-chevron-right"></i></button>
+            <div class="carousel-dots"></div>
+          </div>
+
+          <div class="project-info">
+            <div class="project-cat">
+              <span data-lang="id">Geofisika • Laporan Survei Lapangan</span>
+              <span data-lang="en">Geophysics • Field Survey Report</span>
+            </div>
+            <h3 class="project-title">Survei Geofisika Terpadu Bromo Tengger Semeru (Kelompok 7)</h3>
+
+            <p class="project-desc" data-lang="id">
+              Studi dan pemodelan bawah permukaan kawasan vulkanik &amp; geotermal Bromo Tengger Semeru mengintegrasikan data dari 8 metode geofisika di 500+ titik observasi lapangan. Dipresentasikan dalam dokumen laporan akhir 137 halaman. Analisis khusus metode mikrotremor (seismik pasif) mencakup akuisisi sinyal gelombang ambient, evaluasi QC standar SESAME 2004, ekstraksi frekuensi f0 (1.73–2.44 Hz) dan faktor amplifikasi A0 (3.11–4.28), inversi profil Vs (216–364 m/s), perhitungan Vs30 (353–358 m/s), serta pemetaan ketebalan sedimen piroklastik (36–51 m).
+            </p>
+            <p class="project-desc" data-lang="en">
+              Subsurface modeling and geothermal exploration across the volcanic complex of Bromo Tengger Semeru, integrating datasets from 8 geophysical methods across 500+ field observation points. Documented in a 137-page final report document. Microtremor (passive seismic) analysis includes ambient noise acquisition, SESAME 2004 QC verification, f0 fundamental frequency (1.73–2.44 Hz) &amp; A0 amplification factor extraction (3.11–4.28), Vs ground profile inversion (216–364 m/s), Vs30 estimation (353–358 m/s), and pyroclastic sediment thickness mapping (36–51 m).
+            </p>
+
+            <ul class="project-highlights" data-lang="id">
+              <li><strong>Analisis Mikrotremor HVSR:</strong> Evaluasi keandalan kurva H/V &amp; kejernihan puncak (SESAME 2004) di seluruh titik (Titik 7.1-7.4). Menghasilkan f0 1.73–2.44 Hz &amp; A0 3.11–4.28 (amplifikasi sedang).</li>
+              <li><strong>Inversi Profil Vs &amp; Vs30:</strong> Inversi profil kecepatan Vs (216–364 m/s), Vp (450–759 m/s), nilai Vs30 (353.6–358.6 m/s), serta pemetaan ketebalan sedimen piroklastik (36.16–51.61 m).</li>
+              <li><strong>Geolistrik 1D/2D:</strong> Inversi resistivitas 2D untuk mengidentifikasi akuifer panas bumi dan struktur patahan Ngadas.</li>
+              <li><strong>Magnetotellurik (MT) &amp; Potensial:</strong> Pemodelan 2D MT untuk delineasi *cap rock* reservoir geotermal serta analisis anomali densitas dan susseptibilitas magnetik (Gravitasi &amp; Magnetik).</li>
+              <li><strong>Integrasi Geologi:</strong> Pemetaan struktur sesar, batas kaldera Tengger, dan penyusunan model konseptual sistem geotermal kawasan BTS.</li>
+            </ul>
+
+            <ul class="project-highlights" data-lang="en">
+              <li><strong>Microtremor HVSR Analysis:</strong> SESAME 2004 QC verification confirming 100% reliable &amp; clear peak curves across stations 7.1–7.4, with f0 1.73–2.44 Hz &amp; A0 3.11–4.28.</li>
+              <li><strong>Vs Inversion &amp; Vs30:</strong> Ground profile inversion yielding Vs (216–364 m/s), Vp (450–759 m/s), Vs30 (353.6–358.6 m/s), and pyroclastic sediment thickness (36.16–51.61 m).</li>
+              <li><strong>1D/2D Geoelectrics:</strong> 2D resistivity inversion for delineating geothermal fluid conduits and the Ngadas fault structure.</li>
+              <li><strong>Magnetotellurics (MT) &amp; Potential Fields:</strong> 2D MT inversion for geothermal cap rock mapping alongside gravity density and magnetic susceptibility 2D/3D modeling.</li>
+              <li><strong>Geological Integration:</strong> Structural fault mapping, Tengger caldera boundary delineation, and conceptual geothermal system synthesis.</li>
+            </ul>
+
+            <div class="project-tech">
+              <span class="tech-tag">Microtremor HVSR</span>
+              <span class="tech-tag">SESAME 2004 QC</span>
+              <span class="tech-tag">Vs30 &amp; Inversion Profiles</span>
+              <span class="tech-tag">Seismic Refraction</span>
+              <span class="tech-tag">Geoelectrics 1D/2D</span>
+              <span class="tech-tag">Magnetotelluric (MT)</span>
+              <span class="tech-tag">Gravity &amp; Magnetic</span>
+              <span class="tech-tag">Field Survey Report</span>
+            </div>
+          </div>
+        </article>
+
+        <!-- Project 6: iden.gg (REORDERED CAROUSEL SLIDES) -->
+        <article class="project-entry" data-category="software ml analytics">
+          <div class="carousel-wrapper">
+            <div class="carousel-track">
+              <!-- Reordered: idengg_5.webp moved to position #1 as requested -->
+              <div class="carousel-slide"><img src="assets/images/projects/idengg/idengg_5.webp" alt="iden.gg Archetypes Philosophy Page"></div>
+              <div class="carousel-slide"><img src="assets/images/projects/idengg/idengg_0.webp" alt="iden.gg Cover Feature"></div>
+              <div class="carousel-slide"><img src="assets/images/projects/idengg/idengg_1.webp" alt="iden.gg Report System"></div>
+              <div class="carousel-slide"><img src="assets/images/projects/idengg/idengg_2.webp" alt="iden.gg User Dashboard"></div>
+              <div class="carousel-slide"><img src="assets/images/projects/idengg/idengg_3.webp" alt="iden.gg Hero Section"></div>
+              <div class="carousel-slide"><img src="assets/images/projects/idengg/idengg_4.webp" alt="iden.gg Analytics Module"></div>
+              <div class="carousel-slide"><img src="assets/images/projects/idengg/idengg_6.webp" alt="iden.gg Archetype Cards"></div>
+              <div class="carousel-slide"><img src="assets/images/projects/idengg/idengg_7.webp" alt="iden.gg Pricing & ID Card Unlock"></div>
+            </div>
+            <button class="carousel-btn carousel-prev"><i class="fa-solid fa-chevron-left"></i></button>
+            <button class="carousel-btn carousel-next"><i class="fa-solid fa-chevron-right"></i></button>
+            <div class="carousel-dots"></div>
+          </div>
+
+          <div class="project-info">
+            <div class="project-cat">
+              <span data-lang="id">Aplikasi Web • AI Analytics</span>
+              <span data-lang="en">Web Application • AI Analytics</span>
+            </div>
+            <h3 class="project-title">iden.gg — Mobile Legends Gamer Identity & Mindset Engine</h3>
+
+            <p class="project-desc" data-lang="id">
+              Platform analitik dan identitas pemain Mobile Legends: Bang Bang berbasis AI. Terintegrasi langsung dengan API data Moonton untuk mengevaluasi 8+ arketipe psikologi pemain, pencocokan pemain pro, dan pembuatan kartu identitas digital.
+            </p>
+            <p class="project-desc" data-lang="en">
+              An AI-powered gamer analytics and identity platform for Mobile Legends: Bang Bang. Connects directly to Moonton player data APIs to evaluate 8+ psychological gamer archetypes, pro player matches, and generate custom digital ID cards.
+            </p>
+
+            <ul class="project-highlights" data-lang="id">
+              <li>Integrasi real-time API pemain Moonton & scoring engine psikometri.</li>
+              <li>Generasi otomatis kartu identitas gamer & laporan analisis eksekutif.</li>
+              <li>Antarmuka web interaktif berbasis Next.js, React, dan TypeScript.</li>
+            </ul>
+
+            <ul class="project-highlights" data-lang="en">
+              <li>Real-time Moonton API integration & psychometric scoring engine.</li>
+              <li>Automated digital gamer identity card generation & executive report export.</li>
+              <li>Interactive web application built with Next.js, React, and TypeScript.</li>
+            </ul>
+
+            <div class="project-tech">
+              <span class="tech-tag">Next.js</span>
+              <span class="tech-tag">TypeScript</span>
+              <span class="tech-tag">Moonton API</span>
+              <span class="tech-tag">Scoring Engine</span>
+              <span class="tech-tag">Tailwind CSS</span>
+            </div>
+          </div>
+        </article>
+
+        <!-- Project 7: BPS WebGIS Platform -->
+        <article class="project-entry" data-category="software gis analytics">
+          <div class="carousel-wrapper">
+            <div class="carousel-track">
+              <div class="carousel-slide"><img src="assets/images/projects/bps/bps_0.webp" alt="BPS Dashboard Photo"></div>
+              <div class="carousel-slide"><img src="assets/images/projects/bps/bps_1.webp" alt="BPS Data Validation Poster"></div>
+              <div class="carousel-slide"><img src="assets/images/projects/bps/bps_2.webp" alt="Peta Kerentanan Sosial"></div>
+              <div class="carousel-slide"><img src="assets/images/projects/bps/bps_3.webp" alt="Peta Kerentanan Ekonomi"></div>
+              <div class="carousel-slide"><img src="assets/images/projects/bps/bps_4.webp" alt="Peta Kerentanan Fisik"></div>
+              <div class="carousel-slide"><img src="assets/images/projects/bps/bps_5.webp" alt="Peta Kerentanan Lingkungan"></div>
+            </div>
+            <button class="carousel-btn carousel-prev"><i class="fa-solid fa-chevron-left"></i></button>
+            <button class="carousel-btn carousel-next"><i class="fa-solid fa-chevron-right"></i></button>
+            <div class="carousel-dots"></div>
+          </div>
+
+          <div class="project-info">
+            <div class="project-cat">
+              <span data-lang="id">WebGIS • Data Analytics</span>
+              <span data-lang="en">WebGIS • Data Analytics</span>
+            </div>
+            <h3 class="project-title">BPS WebGIS Platform & Digitasi Data Daerah</h3>
+
+            <p class="project-desc" data-lang="id">
+              Pengolahan data dan pembuatan platform WebGIS interaktif selama magang di Badan Pusat Statistik (BPS). Memvalidasi 10.000+ entri data Daerah Dalam Angka (DDA) dan mendigitasi data tabel dari PDF menjadi WebGIS untuk 200+ pemangku kepentingan.
+            </p>
+            <p class="project-desc" data-lang="en">
+              Large-scale data processing and interactive WebGIS platform development during internship at BPS (Central Bureau of Statistics). Validated 10,000+ regional statistical data entries and digitized PDF tabular data into WebGIS maps for 200+ regional planning stakeholders.
+            </p>
+
+            <ul class="project-highlights" data-lang="id">
+              <li>Pembersihan data skala besar dan verifikasi integritas 10.000+ entri data DDA.</li>
+              <li>Deployment 4 peta WebGIS interaktif: Kerentanan Sosial, Ekonomi, Fisik, dan Lingkungan.</li>
+            </ul>
+
+            <ul class="project-highlights" data-lang="en">
+              <li>Large-scale data cleaning and integrity verification for 10,000+ DDA entries.</li>
+              <li>Deployment of 4 interactive WebGIS maps: Social, Economic, Physical, and Environmental Vulnerability.</li>
+            </ul>
+
+            <div class="project-tech">
+              <span class="tech-tag">WebGIS / Leaflet</span>
+              <span class="tech-tag">JavaScript</span>
+              <span class="tech-tag">Python Pandas</span>
+              <span class="tech-tag">QGIS</span>
+            </div>
+
+            <div class="project-links" style="margin-top:12px;">
+              <a href="https://danielhutagalung.github.io/Peta-Kerentanan-Lingkungan/" target="_blank" class="project-link-btn">
+                <i class="fa-solid fa-globe"></i> 
+                <span data-lang="id">Peta Lingkungan ↗</span>
+                <span data-lang="en">Env Map ↗</span>
+              </a>
+              <a href="https://danielhutagalung.github.io/Peta-Kerentanan-Ekonomi/" target="_blank" class="project-link-btn">
+                <i class="fa-solid fa-globe"></i> 
+                <span data-lang="id">Peta Ekonomi ↗</span>
+                <span data-lang="en">Econ Map ↗</span>
+              </a>
+              <a href="https://danielhutagalung.github.io/Peta-Kerentanan-Fisik/" target="_blank" class="project-link-btn">
+                <i class="fa-solid fa-globe"></i> 
+                <span data-lang="id">Peta Fisik ↗</span>
+                <span data-lang="en">Physical Map ↗</span>
+              </a>
+              <a href="https://danielhutagalung.github.io/Kerentanan-Sosial/" target="_blank" class="project-link-btn">
+                <i class="fa-solid fa-globe"></i> 
+                <span data-lang="id">Peta Sosial ↗</span>
+                <span data-lang="en">Social Map ↗</span>
+              </a>
+            </div>
+          </div>
+        </article>
+
+        <!-- Project 8: Situbondo Landslide Study -->
+        <article class="project-entry" data-category="gis">
+          <div class="carousel-wrapper">
+            <div class="carousel-track">
+              <div class="carousel-slide"><img src="assets/images/projects/situbondo/situ_0.webp" alt="Peta Curah Hujan Situbondo"></div>
+              <div class="carousel-slide"><img src="assets/images/projects/situbondo/situ_1.webp" alt="Peta Jenis Tanah Situbondo"></div>
+              <div class="carousel-slide"><img src="assets/images/projects/situbondo/situ_2.webp" alt="Peta Kemiringan Lereng Situbondo"></div>
+              <div class="carousel-slide"><img src="assets/images/projects/situbondo/situ_3.webp" alt="Peta Kerawanan Bencana Longsor"></div>
+              <div class="carousel-slide"><img src="assets/images/projects/situbondo/situ_4.webp" alt="Peta Penggunaan Lahan Situbondo"></div>
+            </div>
+            <button class="carousel-btn carousel-prev"><i class="fa-solid fa-chevron-left"></i></button>
+            <button class="carousel-btn carousel-next"><i class="fa-solid fa-chevron-right"></i></button>
+            <div class="carousel-dots"></div>
+          </div>
+
+          <div class="project-info">
+            <div class="project-cat">
+              <span data-lang="id">GIS • Analisis Spasial</span>
+              <span data-lang="en">GIS • Spatial Analysis</span>
+            </div>
+            <h3 class="project-title">Studi Kerawanan Bencana Longsor Kabupaten Situbondo</h3>
+
+            <p class="project-desc" data-lang="id">
+              Analisis spasial multi-kriteria untuk pemetaan zonasi tingkat kerawanan bencana tanah longsor di Kabupaten Situbondo dengan mengintegrasikan 5 parameter fisik wilayah.
+            </p>
+            <p class="project-desc" data-lang="en">
+              Multi-criteria spatial analysis for mapping landslide susceptibility zones across Situbondo Regency, integrating 5 physical environmental parameters.
+            </p>
+
+            <ul class="project-highlights" data-lang="id">
+              <li>Overlay spasial peta curah hujan, jenis tanah, kemiringan lereng, dan tutupan lahan.</li>
+              <li>Perhitungan indeks kerawanan bencana untuk rekomendasi mitigasi wilayah rawan.</li>
+            </ul>
+
+            <ul class="project-highlights" data-lang="en">
+              <li>Spatial overlay of rainfall maps, slope steepness, and land use patterns.</li>
+              <li>Disaster vulnerability index calculation for regional mitigation recommendations.</li>
+            </ul>
+
+            <div class="project-tech">
+              <span class="tech-tag">GIS / QGIS</span>
+              <span class="tech-tag">Spatial Overlay</span>
+              <span class="tech-tag">Vulnerability Scoring</span>
+            </div>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <hr class="divider">
+
+  <!-- Section 3: Achievements & Honors (EXACT MATCH TO AWARDS FOLDER) -->
+  <section id="achievements" class="section">
+    <div class="container">
+      <div class="section-label">
+        <span data-lang="id">// PRESTASI & LOMBA</span>
+        <span data-lang="en">// HONORS & COMPETITIONS</span>
+      </div>
+      <h2 class="section-title">
+        <span data-lang="id">Penghargaan & Kompetisi</span>
+        <span data-lang="en">Achievements & Awards</span>
+      </h2>
+      <p class="section-desc">
+        <span data-lang="id">Pencapaian dalam kompetisi tingkat Internasional (Asia-Pasifik) dan Nasional.</span>
+        <span data-lang="en">Recognitions in International (Asia-Pacific) and National competitions.</span>
+      </p>
+
+      <div class="achievements-grid">
+
+        <!-- Award 1: SEG Challenge Bowl -->
+        <div class="ach-card">
+          <div class="ach-year">OCTOBER 2022 • INTERNATIONAL</div>
+          <h3 class="ach-title">
+            <span data-lang="id">Juara 1 — SEG Challenge Bowl Asia-Pacific (APRQ 2022)</span>
+            <span data-lang="en">1st Place Winner — SEG Challenge Bowl Asia-Pacific (APRQ 2022)</span>
+          </h3>
+          <div class="ach-org">Society of Exploration Geophysicists (SEG) Asia-Pacific</div>
+
+          <p class="ach-desc" data-lang="id">
+            Ketua Tim ITS meraih Juara 1 mengalahkan 20+ tim dari universitas ternama se-Asia Pasifik (Australia, China, Filipina, India, Malaysia). Unggul mutlak dengan skor 400+ poin (selisih 300+ poin dari peringkat 2 dan 3).
+          </p>
+          <p class="ach-desc" data-lang="en">
+            Served as Team Leader, winning 1st Place against 20+ top university teams across the Asia-Pacific region (Australia, China, Philippines, India, Malaysia). Achieved a dominant victory with over 400 points (300+ point lead over 2nd place).
+          </p>
+
+          <div class="ach-img">
+            <img src="assets/images/achievements/seg_aprq_cert.webp" alt="SEG Challenge Bowl 1st Winner Certificate">
+          </div>
+        </div>
+
+        <!-- Award 2: SPE PROTECT 2024 -->
+        <div class="ach-card">
+          <div class="ach-year">MAY 2024 • NATIONAL</div>
+          <h3 class="ach-title">
+            <span data-lang="id">Juara 1 — Smart Competition PROTECT 2024</span>
+            <span data-lang="en">1st Place Winner — Smart Competition PROTECT 2024</span>
+          </h3>
+          <div class="ach-org">SPE Universitas Pertamina</div>
+
+          <p class="ach-desc" data-lang="id">
+            Ketua Tim membimbing anggota tim meraih Juara 1 mengalahkan 20+ tim dari 8+ perguruan tinggi se-Indonesia dalam bidang Geoscience, Drilling, Petrophysics, dan Formasi Reservoir.
+          </p>
+          <p class="ach-desc" data-lang="en">
+            Served as Team Leader, guiding team members to victory against 20+ teams from 8+ universities in Geosciences, Drilling, Petrophysics, and Formation Evaluation.
+          </p>
+
+          <div class="ach-img">
+            <img src="assets/images/achievements/spe_protect_2024.webp" alt="SPE PROTECT 2024 Winner Photo">
+          </div>
+        </div>
+
+        <!-- Award 3: Finalist IPFEST 2024 -->
+        <div class="ach-card">
+          <div class="ach-year">FEBRUARY 2024 • NATIONAL</div>
+          <h3 class="ach-title">
+            <span data-lang="id">Finalis — IPFEST 2024 Competition</span>
+            <span data-lang="en">Finalist — IPFEST 2024 Competition</span>
+          </h3>
+          <div class="ach-org">Integrated Petroleum Festival (IPFEST 2024)</div>
+
+          <p class="ach-desc" data-lang="id">
+            Berhasil masuk sebagai finalis dalam kompetisi ilmu kebumian & energi terpadu skala nasional IPFEST 2024.
+          </p>
+          <p class="ach-desc" data-lang="en">
+            Qualified as a national finalist in the integrated petroleum and geosciences competition at IPFEST 2024.
+          </p>
+
+          <div class="ach-img">
+            <img src="assets/images/achievements/ipfest_2024_finalist.webp" alt="IPFEST 2024 Finalist Certificate">
+          </div>
+        </div>
+
+        <!-- Award 4: Finalist Protect 2023 -->
+        <div class="ach-card">
+          <div class="ach-year">MAY 2023 • NATIONAL</div>
+          <h3 class="ach-title">
+            <span data-lang="id">Finalis — Smart Competition PROTECT 2023</span>
+            <span data-lang="en">Finalist — Smart Competition PROTECT 2023</span>
+          </h3>
+          <div class="ach-org">SPE Universitas Pertamina</div>
+
+          <p class="ach-desc" data-lang="id">
+            Finalis kompetisi cerdas cermat geofisika & teknik perminyakan nasional PROTECT 2023.
+          </p>
+          <p class="ach-desc" data-lang="en">
+            National finalist in the geosciences and petroleum engineering smart competition at PROTECT 2023.
+          </p>
+
+          <div class="ach-img">
+            <img src="assets/images/achievements/protect_2023_finalist.webp" alt="Protect 2023 Finalist Certificate">
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <hr class="divider">
+
+  <!-- Section 4: Work & Organizational Experience -->
+  <section id="experience" class="section">
+    <div class="container">
+      <div class="section-label">
+        <span data-lang="id">// PENGALAMAN KERJA</span>
+        <span data-lang="en">// EXPERIENCE & LEADERSHIP</span>
+      </div>
+      <h2 class="section-title">
+        <span data-lang="id">Riwayat Pengalaman & Organisasi</span>
+        <span data-lang="en">Work Experience & Leadership</span>
+      </h2>
+
+      <div class="timeline">
+
+        <div class="tl-item">
+          <div class="tl-date">JAN 2025 – MEI 2025</div>
+          <div>
+            <h3 class="tl-role">Software Developer</h3>
+            <div class="tl-company">Laboratorium Petrofisika ITS</div>
+            <ul class="tl-bullets" data-lang="id">
+              <li>Mengembangkan perangkat lunak interpretasi log sumur & visualisasi petrofisika akademis (PetroniX).</li>
+              <li>Mempresentasikan hasil karya software di Youth Project Booth IPA Convex 2025.</li>
+            </ul>
+            <ul class="tl-bullets" data-lang="en">
+              <li>Developed academic well log interpretation & petrophysics GUI software (PetroniX).</li>
+              <li>Exhibited the software live at the IPA Convex 2025 Youth Project Booth.</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="tl-item">
+          <div class="tl-date">FEB 2025 – MEI 2025</div>
+          <div>
+            <h3 class="tl-role">Data Scientist (Machine Learning)</h3>
+            <div class="tl-company">Scale Up Geoenergy Hackathon 2025 (Tim Energi Nusantara)</div>
+            <ul class="tl-bullets" data-lang="id">
+              <li>Membangun pipeline Machine Learning auto-labeling litologi (CRBM + PSO + XGBoost) pada 22 sumur data LAS.</li>
+              <li>Meraih F1 score 60% pada sumur blind test.</li>
+            </ul>
+            <ul class="tl-bullets" data-lang="en">
+              <li>Built an ML lithology auto-labeling pipeline (CRBM + PSO + XGBoost) on 22 multi-well LAS datasets.</li>
+              <li>Achieved a 60% F1-score on blind test wells.</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="tl-item">
+          <div class="tl-date">NOV 2025 – DES 2025</div>
+          <div>
+            <h3 class="tl-role">Data Analyst Candidate (Offer Received)</h3>
+            <div class="tl-company">Eklipse.GG</div>
+            <ul class="tl-bullets" data-lang="id">
+              <li>Menjalankan query SQL multi-tabel untuk evaluasi aktivitas pengguna & konversi akun premium.</li>
+              <li>Lolos tes asesmen teknis dan menerima penawaran kerja (Job Offer).</li>
+            </ul>
+            <ul class="tl-bullets" data-lang="en">
+              <li>Executed complex multi-table SQL queries evaluating user activity trends & premium subscription conversions.</li>
+              <li>Passed technical recruitment assessment and received formal Job Offer.</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="tl-item">
+          <div class="tl-date">JAN 2024 – APR 2024</div>
+          <div>
+            <h3 class="tl-role">Data Analyst Intern</h3>
+            <div class="tl-company">Badan Pusat Statistik (BPS)</div>
+            <ul class="tl-bullets" data-lang="id">
+              <li>Validasi & pembersihan 10.000+ entri data Daerah Dalam Angka (DDA).</li>
+              <li>Pengembangan & pengoperasian platform WebGIS interaktif untuk 200+ pemangku kepentingan.</li>
+            </ul>
+            <ul class="tl-bullets" data-lang="en">
+              <li>Validated and cleaned 10,000+ regional statistical data entries (DDA).</li>
+              <li>Developed and operated an interactive WebGIS platform for 200+ regional stakeholders.</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="tl-item">
+          <div class="tl-date">FEB 2022 – DES 2023</div>
+          <div>
+            <h3 class="tl-role">
+              <span data-lang="id">Staf Ahli Divisi Keprofesian & Keilmuan</span>
+              <span data-lang="en">Expert Staff in Professionalism & Science Division</span>
+            </h3>
+            <div class="tl-company">Himpunan Mahasiswa Teknik Geofisika (HMTG) ITS</div>
+            <ul class="tl-bullets" data-lang="id">
+              <li>Mengawasi kegiatan ilmiah mahasiswa & komunitas kompetisi (Geoscience Club).</li>
+              <li>Desain materi branding acara (promosi, banner, ID card).</li>
+            </ul>
+            <ul class="tl-bullets" data-lang="en">
+              <li>Supervised student scientific activities and competition communities (Geoscience Club).</li>
+              <li>Designed event branding materials (promotional content, banners, ID cards).</li>
+            </ul>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <hr class="divider">
+
+  <!-- Section 5: Technical Skills -->
+  <section id="skills" class="section">
+    <div class="container">
+      <div class="section-label">
+        <span data-lang="id">// KEAHILAN TEKNIS</span>
+        <span data-lang="en">// TECHNICAL SKILLS</span>
+      </div>
+      <h2 class="section-title">
+        <span data-lang="id">Matriks Keahlian</span>
+        <span data-lang="en">Skills Matrix</span>
+      </h2>
+
+      <div class="skills-grid">
+
+        <div class="skill-group">
+          <div class="skill-group-title">
+            <span data-lang="id">Pemrograman & Web</span>
+            <span data-lang="en">Programming & Web</span>
+          </div>
+          <div class="skill-tags">
+            <span class="skill-tag">Python</span>
+            <span class="skill-tag">SQL (SQLite)</span>
+            <span class="skill-tag">JavaScript (ES6+)</span>
+            <span class="skill-tag">TypeScript</span>
+            <span class="skill-tag">HTML5 / CSS3</span>
+            <span class="skill-tag">Next.js / React</span>
+          </div>
+        </div>
+
+        <div class="skill-group">
+          <div class="skill-group-title">
+            <span data-lang="id">Data Science & AI</span>
+            <span data-lang="en">Data Science & AI</span>
+          </div>
+          <div class="skill-tags">
+            <span class="skill-tag">XGBoost</span>
+            <span class="skill-tag">CRBM & PSO</span>
+            <span class="skill-tag">Scikit-learn</span>
+            <span class="skill-tag">Pandas & NumPy</span>
+            <span class="skill-tag">OpenCV / Pillow</span>
+            <span class="skill-tag">Data Cleaning & Validation</span>
+          </div>
+        </div>
+
+        <div class="skill-group">
+          <div class="skill-group-title">
+            <span data-lang="id">Geoscience & GIS</span>
+            <span data-lang="en">Geoscience & GIS</span>
+          </div>
+          <div class="skill-tags">
+            <span class="skill-tag">WebGIS / Leaflet</span>
+            <span class="skill-tag">QGIS</span>
+            <span class="skill-tag">Petrel</span>
+            <span class="skill-tag">Landmark Halliburton</span>
+            <span class="skill-tag">
+              <span data-lang="id">Pengolahan Data LAS</span>
+              <span data-lang="en">LAS Data Processing</span>
+            </span>
+            <span class="skill-tag">
+              <span data-lang="id">Analisis Log Sumur</span>
+              <span data-lang="en">Well Log Analysis</span>
+            </span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-links">
+        <a href="mailto:rijkaardelyandrie@gmail.com"><i class="fa-solid fa-envelope"></i> rijkaardelyandrie@gmail.com</a>
+        <a href="Updated CV_Rijkaard Elyandrie_2026.pdf" target="_blank">
+          <i class="fa-solid fa-file-pdf"></i> 
+          <span data-lang="id">Unduh CV</span>
+          <span data-lang="en">Download CV</span>
+        </a>
+      </div>
+      <div class="footer-copy">
+        © 2026 Rijkaard Elyandrie. 
+        <span data-lang="id">Portfolio Pribadi — S1 Teknik Geofisika ITS.</span>
+        <span data-lang="en">Personal Portfolio — B.S. Geophysical Engineering ITS.</span>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="js/main.js"></script>
+</body>
+</html>
